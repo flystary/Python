@@ -51,10 +51,90 @@ print(a.upper())
 print(a.replace("World","liql"))
 print(a.split(","))
 """
+"""
 txt = "China is a great country"
 #x= "eat" in txt
 x = "aet" not in txt
 print(x)
 #print(txt.split(" "))
 #print(txt.split("s"))
+"""
+"""
+a = "Hello"
+b = "World"
+c = a + b
+c = a + "," +b +"!"
+print(c)
+"""
+"""
+quantity = 4
+itemno = 234
+price = 90.43
+myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
+print(myorder.format(quantity,itemno,price))
+x = myorder.find("ant")
+print(x)
+"""
+"""
+thistuple = ("apple","banana","cherry")
+for x in thistuple:
+    print(x)
+"""
+"""
+
+tule1 = ("a","b","c")
+tule2 = (1,2,4,5)
+tule3 = tule1 + tule2
+print(tule3)
+"""
+"""
+thisdict =    {
+    "brand":"Porsche",
+    "model":"911",
+    "year":"2020-04-14"
+}
+thisdict.pop("model")
+print(thisdict)
+"""
+"""
+i=1
+while i<10:
+    print(i)
+    c=i+(i+1)
+    if i == 5:
+       break
+    i += 1 
+"""
+"""
+i = 0
+while i < 10:
+     i +=  1
+     if i >= 7:
+         continue
+     print(i)
+"""
+"""
+y = range(2,14)
+for x in y:
+   if x == 10:
+       print(len(y))
+    
+"""
+"""
+fruits = ["apple","banana","cherry"]
+for x in fruits:
+    if x == "cherry":
+        break
+    print(x)
+"""
+"""
+fruits = ["apple","banana","cherry"]
+for x in fruits:
+    if x == "cherry":
+        continue
+    print(x)
+"""
+print("Enter your name:")
+x = input()
+print("Hello", x)
 
