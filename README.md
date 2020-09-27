@@ -1,2 +1,2 @@
 # Python
-python
+python脚本
