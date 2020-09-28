@@ -134,7 +134,107 @@ for x in fruits:
         continue
     print(x)
 """
+"""
 print("Enter your name:")
 x = input()
 print("Hello", x)
+print("Enter your name:")
+ssl = input()
+ssl = open("ssl.txt","x")
+"""
+"""
+import os, sys
+def Mkdir():
+    #print("Enter your file name:")
+    #path = input()
+    #file_name = path
+    file_name = x
+    os.mkdir(file_name)
+    os.chdir(file_name)
+    f = open("demofile2.txt", "w")
+    f.write("Now the file has more content!")
+    f.close()
+
+def my_function(food):
+    global x
+    for x in food:
+        Mkdir()
+        #print(x)
+        if x == "ucloud":
+            break
+
+fruits = ("baidu","ali","tenc","ucloud")
+Mkdir(my_function(fruits))
+
+#my_function(fruits)
+"""
+#name(fruits)
+"""
+class MyClass:
+    x = 5
+p1 = MyClass()
+print(p1.x)
+"""
+"""
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+p1 = Person("liql", 23)
+
+print(p1.name)
+print(p1.age)
+"""
+"""
+class Person:
+    def __init__(are,name,age):
+        are.name = name 
+
+        are.age = age
+    def my_function(asx):
+        print("hello myname is "+ asx.name)
+
+p1 = Person("duhongw",24)
+print(p1.name)
+print(p1.age)
+p1.my_function()
+"""
+class Person:
+    def __init__(are,fname,lname):
+        are.firstname = fname
+        are.lastname = lname
+
+    def printname(are):
+        print(are.firstname,are.lastname)
+"""
+class student(Person):
+    def __init__(are,fname,lname):
+        #Person.__init__(are.fname,lname)
+        super().__init__(fname,lname)
+        are.graduationyear = 2019
+"""
+"""
+class Student(Person):
+    def __init__(are,fname,lname,year):
+        super().__init__(fname,lname)
+        are.graduationyear = year
+
+#x = student("bill","Gates")
+    def welcome(are):
+        print("Walcome",are.firstname,are.lastname,"to the class of",are.graduationyear )
+#print(x.graduationyear)
+x = Student("Elon","Musk",2019)
+x.welcome()
+"""
+"""
+x = 100
+def myfunc():
+    x = 200
+    print(x)
+
+myfunc()
+print(x)
+"""
+
 
