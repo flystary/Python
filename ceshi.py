@@ -198,6 +198,7 @@ print(p1.name)
 print(p1.age)
 p1.my_function()
 """
+"""
 class Person:
     def __init__(are,fname,lname):
         are.firstname = fname
@@ -206,13 +207,14 @@ class Person:
     def printname(are):
         print(are.firstname,are.lastname)
 """
+"""
 class student(Person):
     def __init__(are,fname,lname):
         #Person.__init__(are.fname,lname)
         super().__init__(fname,lname)
         are.graduationyear = 2019
-"""
-"""
+
+
 class Student(Person):
     def __init__(are,fname,lname,year):
         super().__init__(fname,lname)
@@ -224,8 +226,7 @@ class Student(Person):
 #print(x.graduationyear)
 x = Student("Elon","Musk",2019)
 x.welcome()
-"""
-"""
+
 x = 100
 def myfunc():
     x = 200
@@ -233,8 +234,7 @@ def myfunc():
 
 myfunc()
 print(x)
-"""
-"""
+
 import json
 
 x = {
@@ -252,7 +252,7 @@ x = {
 
 #print(json.dumps(x))
 print(json.dumps(x,indent=4))
-"""
+
 import re
 txt = "China is a great country"
 #x = re.sub("China","Hangzhou", txt)
@@ -262,9 +262,20 @@ x = re.search("ani",txt)
 
 print(x)
 
-"""
 if (x):
   print("YES! We have a match!")
 else:
   print("No match")
 """
+
+import mysql.connector
+mydb = mysql.connector.connect(
+    host="172.16.30.65",
+    user="python",
+    passwd="password"
+)
+mycursor = mydb.cursor()
+mycursor.execute("SHOW DATABASES")
+for x in mycursor:
+    print(x)
+#print(mydb)
