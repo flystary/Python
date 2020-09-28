@@ -159,10 +159,8 @@ def my_function(food):
     global x
     for x in food:
         Mkdir()
+        format(x)
         #print(x)
-        if x == "ucloud":
-            break
-
 fruits = ("baidu","ali","tenc","ucloud")
 Mkdir(my_function(fruits))
 
@@ -236,5 +234,37 @@ def myfunc():
 myfunc()
 print(x)
 """
+"""
+import json
 
+x = {
+    "name": "Bill",
+    "age" : 62,
+    "married" : True,
+    "divorced": False,
+    "children" : ("Jennifer","Rory","Phoebe"),
+    "pets" : None,
+    "cars" : [
+         {"model": "Porsche", "mpg": 38.2},
+         {"model": "BMW M5", "mpg": 26.9}
+    ]
+}
 
+#print(json.dumps(x))
+print(json.dumps(x,indent=4))
+"""
+import re
+txt = "China is a great country"
+#x = re.sub("China","Hangzhou", txt)
+#str = "China is a great country"
+#x = re.sub("\s", "9", txt, 3)
+x = re.search("ani",txt)
+
+print(x)
+
+"""
+if (x):
+  print("YES! We have a match!")
+else:
+  print("No match")
+"""
